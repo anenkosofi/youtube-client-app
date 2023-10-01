@@ -8,6 +8,11 @@ import { YoutubeListComponent } from './components/youtube-list/youtube-list.com
 import { YoutubeItemComponent } from './components/youtube-item/youtube-item.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { LogoComponent } from './components/logo/logo.component';
+import { UserBarComponent } from './components/user-bar/user-bar.component';
+import { FilterByWordComponent } from './components/filter-by-word/filter-by-word.component';
+import { FilterComponent } from './components/filter/filter.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,13 +21,14 @@ import { SettingsComponent } from './components/settings/settings.component';
     YoutubeListComponent,
     YoutubeItemComponent,
     SearchBarComponent,
-    SettingsComponent
+    SettingsComponent,
+    LogoComponent,
+    UserBarComponent,
+    FilterByWordComponent,
+    FilterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
