@@ -4,3 +4,20 @@
   margin: 0 auto;
   padding: 0 24px;
 }
+
+.header {
+  background-color: #e5e5e5;
+
+  &__upper-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+  }
+}

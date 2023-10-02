@@ -1,1 +1,11 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
 
+  &__icon {
+    fill: #2f80ed;
+  }
+}
