@@ -1,1 +1,3 @@
-<app-header></app-header>
+<app-header (isFormSubmitted)="onFormSubmitted($event)" (sortCondition)="onConditionSet($event)"
+  (query)="onQuerySet($event)"></app-header>
+<app-youtube-client [isFormSubmitted]="isFormSubmitted" [condition]="condition" [query]="query"></app-youtube-client>

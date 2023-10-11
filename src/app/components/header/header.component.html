@@ -3,10 +3,12 @@
     <div class="header__upper-content">
       <div class="header__search-bar">
         <app-logo></app-logo>
-        <app-search-bar></app-search-bar>
-        <app-settings></app-settings>
+        <app-search-bar (isFormSubmitted)="onFormSubmitted($event)"></app-search-bar>
+        <app-settings (areSettingsActive)="onSettingsActive($event)"></app-settings>
       </div>
       <app-user-bar></app-user-bar>
     </div>
+    <app-filter [areSettingsActive]="areSettingsActive" (condition)="onConditionSet($event)"
+      (word)="onQuerySet($event)"></app-filter>
   </div>
 </header>

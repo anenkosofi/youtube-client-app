@@ -1,0 +1,29 @@
+.filter {
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+    color: #2f80ed;
+    cursor: pointer;
+  }
+
+  &__input {
+    width: 149px;
+    height: 12px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    color: #333;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+  }
+}

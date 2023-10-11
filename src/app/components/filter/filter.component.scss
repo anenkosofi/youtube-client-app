@@ -1,0 +1,32 @@
+.header {
+  &__lower-content {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 18px 0;
+  }
+}
+
+.filter {
+  &__heading {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    color: #929292;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__item {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+    color: #2f80ed;
+    cursor: pointer;
+  }
+}

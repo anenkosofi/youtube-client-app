@@ -1,1 +1,8 @@
-<p>filter works!</p>
+<div class="header__lower-content" *ngIf="areSettingsActive">
+  <p class="filter__heading">Sorting by:</p>
+  <ul class="filter__list">
+    <li class="filter__item" (click)="onSetSortCondition('date')">date</li>
+    <li class="filter__item" (click)="onSetSortCondition('views')">count of views</li>
+    <app-filter-by-word (word)="onQuerySet($event)" (click)="onSetSortCondition('word')"></app-filter-by-word>
+  </ul>
+</div>

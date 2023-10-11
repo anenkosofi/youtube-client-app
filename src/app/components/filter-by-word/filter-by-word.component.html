@@ -1,1 +1,4 @@
-<p>filter-by-word works!</p>
+<li class="filter__item">
+  <label for="word" class="filter__label" (click)="getQuery()">by word or sentence</label>
+  <input id="word" name="word" type="text" class="filter__input" [(ngModel)]="query">
+</li>

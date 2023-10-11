@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { LogoComponent } from './components/logo/logo.component';
 import { UserBarComponent } from './components/user-bar/user-bar.component';
 import { FilterByWordComponent } from './components/filter-by-word/filter-by-word.component';
 import { FilterComponent } from './components/filter/filter.component';
+import { YoutubeClientComponent } from './components/youtube-client/youtube-client.component';
+import { SortYoutubeListPipe } from './pipes/sort-youtube-list.pipe';
 
 @NgModule({
   declarations: [
@@ -27,8 +30,16 @@ import { FilterComponent } from './components/filter/filter.component';
     UserBarComponent,
     FilterByWordComponent,
     FilterComponent,
+    YoutubeClientComponent,
+    SortYoutubeListPipe,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, AngularSvgIconModule.forRoot()],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    AngularSvgIconModule.forRoot(),
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
