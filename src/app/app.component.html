@@ -1,0 +1,4 @@
+<app-header (isFormSubmitted)="onFormSubmitted($event)" (sortCondition)="onConditionSet($event)"
+  (query)="onQuerySet($event)" (currentDirection)="onCurrentDirectionSet($event)"></app-header>
+<app-youtube-client [isFormSubmitted]="isFormSubmitted" [condition]="condition" [query]="query"
+  [direction]="direction"></app-youtube-client>

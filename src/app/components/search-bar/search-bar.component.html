@@ -1,1 +1,7 @@
-<p>search-bar works!</p>
+<form autocomplete="off" class="form" (ngSubmit)="onSubmitHandler()">
+  <div class="form__group">
+    <label for="query" class="form__label"></label>
+    <input id="query" type="text" placeholder="Kuji Podcast" class="form__input">
+  </div>
+  <button class="form-button">search</button>
+</form>

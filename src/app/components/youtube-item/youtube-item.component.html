@@ -1,1 +1,22 @@
-<p>youtube-item works!</p>
+<li class="youtube__item">
+  <a class="youtube__link">
+    <div class="youtube__thumb">
+      <img [src]="youtubeItem.snippet.thumbnails.standard.url">
+    </div>
+    <div class="youtube__description">
+      <ul class="youtube__statistics">
+        <li><svg-icon src="../../../assets/icons/viewed.svg"></svg-icon><span>{{ youtubeItem.statistics.viewCount
+            }}</span></li>
+        <li><svg-icon src="../../../assets/icons/liked.svg"></svg-icon><span>{{ youtubeItem.statistics.likeCount
+            }}</span></li>
+        <li><svg-icon src="../../../assets/icons/disliked.svg"></svg-icon><span>{{ youtubeItem.statistics.dislikeCount
+            }}</span></li>
+        <li><svg-icon src="../../../assets/icons/quantity.svg"></svg-icon><span>{{ youtubeItem.statistics.commentCount
+            }}</span></li>
+      </ul>
+      <h2 class="youtube__heading">{{ youtubeItem.snippet.channelTitle }}</h2>
+      <button type="button" class="youtube__button">more...</button>
+    </div>
+  </a>
+  <div class="youtube__status" [ngClass]="getColorStatusByDate(youtubeItem.snippet.publishedAt)"></div>
+</li>
