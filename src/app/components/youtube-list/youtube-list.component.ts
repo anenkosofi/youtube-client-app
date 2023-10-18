@@ -10,6 +10,7 @@ import { YoutubeClient } from 'src/app/interfaces/youtube-client';
 export class YoutubeListComponent {
   @Input() condition!: string;
   @Input() query!: string;
+  @Input() direction!: 'asc' | 'desc';
   youtubeList: YoutubeClient[] = [
     {
       kind: 'youtube#video',

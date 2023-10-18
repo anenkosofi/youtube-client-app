@@ -9,4 +9,5 @@ export class YoutubeClientComponent {
   @Input() isFormSubmitted!: boolean;
   @Input() condition!: string;
   @Input() query!: string;
+  @Input() direction!: 'asc' | 'desc';
 }

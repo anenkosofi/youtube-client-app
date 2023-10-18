@@ -8,7 +8,7 @@
       </div>
       <app-user-bar></app-user-bar>
     </div>
-    <app-filter [areSettingsActive]="areSettingsActive" (condition)="onConditionSet($event)"
-      (word)="onQuerySet($event)"></app-filter>
+    <app-filter [areSettingsActive]="areSettingsActive" (condition)="onConditionSet($event)" (word)="onQuerySet($event)"
+      (currentDirection)="onCurrentDirectionSet($event)"></app-filter>
   </div>
 </header>

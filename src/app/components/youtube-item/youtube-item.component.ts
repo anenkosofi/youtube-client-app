@@ -30,13 +30,13 @@ export class YoutubeItemComponent {
       months += 12;
     }
 
-    if (months > 6) {
+    if (years || (years && months > 6)) {
       className = 'youtube__status_red';
-    } else if (months > 1 && months <= 6) {
+    } else if (!years && months > 1 && months <= 6) {
       className = 'youtube__status_yellow';
-    } else if (months <= 1 && days > 7) {
+    } else if (!years && months <= 1 && days > 7) {
       className = 'youtube__status_green';
-    } else {
+    } else if (!years && months < 1 && days <= 7) {
       className = 'youtube__status_blue';
     }
     return className;

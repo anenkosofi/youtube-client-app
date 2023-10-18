@@ -1,4 +1,4 @@
 <ul class="youtube__list">
-  <app-youtube-item *ngFor="let youtubeItem of (youtubeList | sortYoutubeList:condition:query)"
+  <app-youtube-item *ngFor="let youtubeItem of (youtubeList | sortYoutubeList:condition:query:direction)"
     [youtubeItem]="youtubeItem"></app-youtube-item>
 </ul>
